@@ -1,0 +1,174 @@
+/*css reset
+http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* my code starts here */
+
+html {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    color: white;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.mainlogo {
+    width: 50px;
+    display: inline;
+}
+
+.wrapper {
+    max-width: 1200px;
+    background-color: #707070;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.wrapper h2 {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    max-width: 90%;
+}
+
+.wrapper h3 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.section {
+    padding-top: 70px;
+}
+
+.home {
+    padding: 1em;
+    margin-bottom: 2em;
+    padding-top: 70px;
+}
+
+.home img {
+    max-width: 60%;
+}
+
+.home p {
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.workexample {
+    padding-bottom: 2rem;
+}
+
+.webexamples {
+    background-color: #2a2a2a;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.webexamples img {
+    max-width: 100px;
+    padding-top: 1rem;
+}
+
+.starfish img {
+    max-width: 150px;
+}
+
+.webexamples h4 {
+    font-weight: bold;
+    margin-top: 0;
+    padding-bottom: 1rem;
+}
+
+.photographybox {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.graphicdesignbox {
+    background-color: #2a2a2a;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.graphicdesignbox img {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.skillsbox {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #2a2a2a;
+    padding-top: 1rem;
+}
+
+.skillsbox img {
+    padding-bottom: 1rem;
+}
+
+.contact {
+    padding-bottom: 2rem;
+}

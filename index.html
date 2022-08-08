@@ -5,18 +5,170 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morrison MacEachern Portfolio</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <header>
-        <img class="mainlogo" src="images/logo.png" alt="M logo">
-        <h1>Morrison<br>MacEachern</h1>
-        <nav>
-            <ul>
-                
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#home">
+                    <img src="images/logo.png" alt="site logo" width="24" height="24" class="d-inline-block align-text-top">
+                    Morrison MacEachern
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" href="#home">Home</a>
+                  <a class="nav-link active" href="#work">Work</a>
+                  <a class="nav-link active" href="#skills">Skills</a>
+                  <a class="nav-link active" href="#contact">Contact</a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
+
+    <div class="wrapper container">
+        <div class="home section" id="home">
+            <img src="images/selfie.png" alt="a picture of Morrison">
+            <h2>About Me</h2>
+            <p>My name is Morrison MacEachern, I'm a Designer currently enrolled at Algonquin College for Interactive Media Design. While I have experience in all areas of Media Design, including Photography, Videography, Graphic Design, and Content Management Systems, my main area of focus is in Web Development. As a Front End Web Developer, I've crafted many websites through HTML and CSS, all while following proper guidelines and conventions. Bellow you can see three of my most ambitious projects so far- aside from this website of course!</p>
+            <br>
+            <p>I have quite a bit of experience working in Microsoft Office and Adobe Creative Cloud, with in-depth knowledge of many of their core applications. I'm familiar with HTML, CSS, JavaScript, C++, and Python coding languages, and am eager to learn more as I round out my education. My greatest strength is my unwavering work ethic and my ability to adapt to new and unexpected situations and come out on top.</p>
+        </div>
+
+        <div class="work section" id="work">
+            <h2>Work Examples</h2>
+            
+            <div class="webdesign workexample">
+                <h3>Web Design</h3>
+                <div class="webexamples">
+                    <img src="images/3starmedia.png" alt="3 star media">
+                    <h4>Example 1<br>Three Star Media</h4>
+                </div>
+                <div class="webexamples starfish">
+                    <img src="images/lifesweetness.png" alt="life's sweetness">
+                    <h4>Example 1<br>Life's Sweetness</h4>
+                </div>
+                <div class="webexamples">
+                    <img src="images/lonestarfish.png" alt="lone starfish">
+                    <h4>Example 1<br>Lone Starfish</h4>
+                </div>
+            </div>
+
+            <div class="photography workexample">
+                <h3>Photography</h3>
+                <div class="photographybox">
+                    <div id="carouselphotography" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselphotography" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselphotography" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselphotography" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselphotography" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselphotography" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/photography1.png" class="d-block w-100" alt="guitar player portrait">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/photography2.png" class="d-block w-100" alt="stairs">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/photography3.png" class="d-block w-100" alt="bread">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/photography4.png" class="d-block w-100" alt="trees">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/photography5.png" class="d-block w-100" alt="bush">
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselphotography" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselphotography" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="graphicdesign workexample">
+                <h3>Graphic Design</h3>
+                <div class="graphicdesignbox">
+                    <img src="images/facebookad.png" alt="a design for a facebook ad">
+                    <img src="images/poster.png" alt="sci fi poster">
+                    <img src="images/caticon1.png" alt="cat app icon sm">
+                    <img src="images/caticon2.png" alt="cat app icon med">
+                    <img src="images/caticon3.png" alt="cat app icon lg">
+                </div>
+            </div>
+        </div>
+
+        <div class="skills section" id="skills">
+            <h2>Skills</h2>
+            <div class="skillsbox">
+                <div class="container text-center">
+                    <div class="row">
+                    <div class="col">
+                        <img src="images/css.png" alt="css logo">
+                    </div>
+                    <div class="col">
+                        <img src="images/html.png" alt="html logo">
+                    </div>
+                    <div class="col">
+                        <img src="images/word.png" alt="microsoft word logo">
+                    </div>
+                    <div class="col">
+                        <img src="images/ppt.png" alt="microsoft powerpoint logo">
+                    </div>
+                    <div class="col">
+                        <img src="images/xl.png" alt="microsoft excel logo">
+                    </div>
+                    <div class="col">
+                        <img src="images/outlook.png" alt="microsoft outlook logo">
+                    </div>
+                    <div class="col">
+                        <img src="images/ps.png" alt="adobe photoshop logo">
+                    </div>
+                    <div class="col">
+                        <img src="images/ai.png" alt="adobe illustrator logo">
+                    </div>
+                    <div class="col">
+                        <img src="images/xd.png" alt="adobe xd logo">
+                    </div>
+                    <div class="col">
+                        <img src="images/pr.png" alt="adobe premiere pro logo">
+                    </div>
+                    <div class="col">
+                        <img src="images/au.png" alt="adobe audition logo">
+                    </div>
+                    <div class="col">
+                        <img src="images/lrc.png" alt="adobe lightroom classic logo">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact section" id="contact">
+            <h2>Contact Info</h2>
+            <p>Email: mace0061@algonquinlive.com<br>Phone: 613-617-1300</p>
+        </div>
+    </div>
+
+    <footer>
+        <img class="mainlogo" src="images/logo.png" alt="M logo">
+        <p>&copy;2022 Morrison MacEachern</p>
+    </footer>
 </body>
 </html>
