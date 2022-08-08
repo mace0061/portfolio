@@ -172,3 +172,12 @@ header {
 .contact {
     padding-bottom: 2rem;
 }
+
+footer img {
+    float: left;
+}
+
+footer p {
+    padding-top: 1rem;
+    text-align: center;
+}
