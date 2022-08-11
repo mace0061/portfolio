@@ -80,7 +80,7 @@ header {
     font-size: 3em;
     font-weight: bold;
     margin: 0 auto;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     max-width: 90%;
 }
 
@@ -119,8 +119,9 @@ header {
 .webexamples {
     background-color: #2a2a2a;
     color: white;
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
+    margin-bottom: 1rem;
 }
 
 .webexamples img {
@@ -136,6 +137,10 @@ header {
     font-weight: bold;
     margin-top: 0;
     padding-bottom: 1rem;
+}
+
+.webexamples a:hover {
+    transform: scale(1.1);
 }
 
 .photographybox {
@@ -180,4 +185,42 @@ footer img {
 footer p {
     padding-top: 1rem;
     text-align: center;
+}
+
+@media screen and (min-width: 760px) {
+    .webexamples {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-bottom: 1rem;
+        align-items: center;
+    }
+    
+    .webexamples img, .webexamples h4, .webexamples a{
+        margin: 0 auto;
+    }
+
+    .webexamples h4 {
+        transform: translate(0, 50%);
+    }
+
+    .weblinebreak {
+        content: ' ';
+    }
+
+    .graphicdesignbox {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .graphicdesignbox img:nth-child(1) {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .graphicdesignbox img:nth-child(2) {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
 }
