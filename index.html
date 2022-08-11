@@ -12,6 +12,8 @@
 </head>
 
 <body>
+    <!-- a navbar from bootstrap, which includes a site name (my name) and logo along with links to key points on the page
+    the bar also collapses into a dropdown at smaller screensizes -->
     <header>
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
@@ -36,7 +38,9 @@
           </nav>
     </header>
 
+    <!-- the wrapper that all the site content is inside of -->
     <div class="wrapper container">
+        <!-- a "home" or "about" section that includes a picture of me and some basic information about myself -->
         <div class="home section" id="home">
             <img src="images/selfie.png" alt="a picture of Morrison">
             <h2>About Me</h2>
@@ -45,26 +49,29 @@
             <p>I have quite a bit of experience working in Microsoft Office and Adobe Creative Cloud, with in-depth knowledge of many of their core applications. I'm familiar with HTML, CSS, JavaScript, C++, and Python coding languages, and am eager to learn more as I round out my education. My greatest strength is my unwavering work ethic and my ability to adapt to new and unexpected situations and come out on top.</p>
         </div>
 
+        <!-- examples of my work sorted into 3 categories: web design, photography, and graphic design -->
         <div class="work section" id="work">
             <h2>Work Examples</h2>
-            
+            <!-- three web design examples that link to the websites i designed in the past. I decided to make the entire background of the element into an anchor, that way no matter where the user clicks they'll always go to the link. makes it harder to miss too -->
             <div class="webdesign workexample">
                 <h3>Web Design</h3>
-                <div class="webexamples">
-                    <a href="https://mace0061.github.io/final-project" target="_blank"><img src="images/3starmedia.png" alt="3 star media"></a>
-                    <a href="https://mace0061.github.io/final-project" target="_blank"><h4>Example 1 <br class="weblinebreak">Three Star Media</h4></a>
-                </div>
-                <div class="webexamples starfish">
-                    <a href="https://mace0061.github.io/mtm6201-midterm" target="_blank"><img src="images/lifesweetness.png" alt="life's sweetness"></a>
-                    <a href="https://mace0061.github.io/mtm6201-midterm" target="_blank"><h4>Example 2 <br class="weblinebreak">Life's Sweetness</h4></a>
-                </div>
-                <div class="webexamples">
-                    <a href="https://mace0061.github.io/midterm" target="_blank"><img src="images/lonestarfish.png" alt="lone starfish"></a>
-                    <a href="https://mace0061.github.io/midterm" target="_blank"><h4>Example 3 <br class="weblinebreak">Lone Starfish</h4></a>
-                </div>
+                <a class="webexamples" href="https://mace0061.github.io/final-project" target="_blank">
+                    <img src="images/3starmedia.png" alt="3 star media">
+                    <h4>Example 1 <br class="weblinebreak">Three Star Media</h4>
+                </a>
+                <a class="webexamples starfish" href="https://mace0061.github.io/mtm6201-midterm" target="_blank">
+                    <img src="images/lifesweetness.png" alt="life's sweetness">
+                    <h4>Example 2 <br class="weblinebreak">Life's Sweetness</h4>
+                </a>
+                <a class="webexamples" href="https://mace0061.github.io/midterm" target="_blank">
+                    <img src="images/lonestarfish.png" alt="lone starfish">
+                    <h4>Example 3 <br class="weblinebreak">Lone Starfish</h4>
+                </a>
             </div>
 
+            <!-- these 2 sections will appear next to each other above a certain screensize -->
             <div class="photographyandgraphicdesign">
+                <!-- 5 examples of photography, contained in a carousel created using bootstrap. pretty straightforward, scales with screen size -->
                 <div class="photography workexample">
                     <h3>Photography</h3>
                     <div class="photographybox">
@@ -105,6 +112,7 @@
                     </div>
                 </div>
 
+                <!-- 5 examples of graphic design, arranged differently depending on screen size -->
                 <div class="graphicdesign workexample">
                     <h3>Graphic Design</h3>
                     <div class="graphicdesignbox">
@@ -118,6 +126,7 @@
             </div>
         </div>
 
+        <!-- 12 different applications (plus css and html) that I have skill and experience in -->
         <div class="skills section" id="skills">
             <h2>Skills</h2>
             <div class="skillsbox">
@@ -164,12 +173,14 @@
             </div>
         </div>
 
+        <!-- very simple contact section, includes my email and phone number -->
         <div class="contact section" id="contact">
             <h2>Contact Info</h2>
             <p>Email: mace0061@algonquinlive.com<br>Phone: 613-617-1300</p>
         </div>
     </div>
 
+    <!-- footer at the bottom of the site, consisting of a logo and copyright to myself -->
     <footer>
         <img class="mainlogo" src="images/logo.png" alt="M logo">
         <p>&copy;2022 Morrison MacEachern</p>

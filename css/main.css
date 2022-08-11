@@ -65,6 +65,7 @@ p {
     font-size: 16pt;
 }
 
+/* brings header to the front, makes it the full width of the screen, makes it follow you as you scroll down the page */
 header {
     position: fixed;
     width: 100%;
@@ -77,6 +78,7 @@ header {
     display: inline;
 }
 
+/* sets the wrapper or background of the main content of the site, gives it a max width it cant exceed, makes all the writing on it appear in white */
 .wrapper {
     max-width: 1200px;
     background-color: #707070;
@@ -125,27 +127,36 @@ header {
     padding-bottom: 2rem;
 }
 
+/* gives a background color and specific width to the web design examples section 
+also arranges it into a simple grid with the image on top and the text below*/
 .webexamples {
+    display: grid;
+    grid-template-columns: 1fr;
     background-color: #2a2a2a;
+    text-decoration: none;
     color: white;
     width: 70%;
     margin: 0 auto;
     margin-bottom: 1rem;
 }
 
+/* makes the web design examples grow slightly, brighten, and add text underlines when hovered or focused */
+.webexamples:hover, .webexamples:focus {
+    transform: scale(1.01);
+    background-color: #3b3b3b;
+    color: white;
+    text-decoration: underline;
+}
+
 .webexamples img {
     width: 100%;
     max-width: 100px;
     padding-top: 1rem;
+    margin: 0 auto;
 }
 
 .starfish img {
     max-width: 150px;
-}
-
-.webexamples a {
-    text-decoration: none;
-    color: white;
 }
 
 .webexamples h4 {
@@ -155,16 +166,12 @@ header {
     padding-bottom: 1rem;
 }
 
-.webexamples a:hover {
-    transform: scale(1.1);
-    text-decoration: underline;
-}
-
 .photographybox {
     width: 80%;
     margin: 0 auto;
 }
 
+/* gives the graphic design area a background color and sets its max width to 80%, centers it within its element */
 .graphicdesignbox {
     background-color: #2a2a2a;
     padding-top: 1rem;
@@ -180,6 +187,7 @@ header {
     display: block;
 }
 
+/* gives the skills area a background and sets its width to 80%, centers it */
 .skillsbox {
     width: 80%;
     margin: 0 auto;
@@ -210,6 +218,7 @@ footer p {
 }
 
 @media screen and (min-width: 760px) {
+    /* rearranges the web design examples using flex so that the images appear after the text, on the right */
     .webexamples {
         display: flex;
         flex-direction: row-reverse;
@@ -217,7 +226,7 @@ footer p {
         align-items: center;
     }
     
-    .webexamples img, .webexamples h4, .webexamples a{
+    .webexamples img, .webexamples h4{
         margin: 0 auto;
     }
 
@@ -225,10 +234,12 @@ footer p {
         transform: translate(0, 50%);
     }
 
+    /* hides the line break at this screen size in accordance with my original design for the site */
     .weblinebreak {
         content: ' ';
     }
 
+    /* rearranges the graphic design skills area into a grid */
     .graphicdesignbox {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -248,6 +259,7 @@ footer p {
 }
 
 @media screen and (min-width: 992px) {
+    /* brings back the line break at this screen size */
     .weblinebreak {
         content: normal ;
     }
@@ -256,6 +268,7 @@ footer p {
         text-align: left;
     }
 
+    /* takes these two areas and sets them beside each other on the page to better fit the desktop screen size */
     .photographyandgraphicdesign {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
